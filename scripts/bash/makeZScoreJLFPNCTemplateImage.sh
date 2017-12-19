@@ -21,7 +21,7 @@ exit 1
 jlfLookUp="../../data/jlf_lookupWithWM.csv"
 pncJlfLabelImage="../../data/pncTemplateJLF_LabelsWithWM.nii.gz"
 if [ ! "X${4}" == "X" ] ; then 
-  jlfLookUp="/data/joy/BBL/studies/pnc/template/jlf/hiLoLookup/jlf_lookup${4}.csv" ; 
+  jlfLookUp="../../data/jlf_lookup${4}.csv" ; 
 fi 
 echo ${jlfLookUp}
 inputCSV=${1}

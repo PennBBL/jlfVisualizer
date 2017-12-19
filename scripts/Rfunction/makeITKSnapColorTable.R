@@ -128,8 +128,6 @@ writeColorTableandKey <- function(inputData, inputColumn, outName, minTmp=NULL, 
   tmpOutputKey <- tmpOutputKey[order(as.numeric(tmpOutputKey[,2])),]
   tmpOutputKey[,3] <- rev(seq(dim(tmpColorTable)[1]-1, 1, -1))
   tmpOutputKeyFlip <- tmpOutputKey
-  tmpOutputKey[,1] <- paste('R_', tmpOutputKey[,1], sep='')
-  tmpOutputKeyFlip[,1] <- paste('L_', tmpOutputKeyFlip[,1], sep='')
  
   # Now write the tables
   outCTName <- paste(outName, '-ColorTable.txt', sep='')
